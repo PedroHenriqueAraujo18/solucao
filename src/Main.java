@@ -41,32 +41,6 @@ public class Main {
         System.out.println("Maior valor de faturamento: " + calculadora.calcularMaiorFaturamento());
         System.out.println("Dias com faturamento acima da média: " + calculadora.calcularDiasAcimaMedia());
         System.out.println("==========================================");
-        /**
-         * Exercício 4 Dado o valor de faturamento mensal de uma distribuidora, detalhado por estado:
-         * • SP – R$67.836,43
-         * • RJ – R$36.678,66
-         * • MG – R$29.229,88
-         * • ES – R$27.165,48
-         * • Outros – R$19.849,53
-         *
-         * Escreva um programa na linguagem que desejar onde calcule
-         * o percentual de representação que cada estado teve dentro do
-         * valor total mensal da distribuidora.
-         */
-        System.out.println("==========================================");
-    double sp = 67836.43;
-    double rj = 36678.66;
-    double mg = 29229.88;
-    double es = 27165.48;
-    double outros = 19849.53;
-
-    double total = sp + rj + mg + es + outros;
-
-    double percentualSP = (sp / total) * 100;
-    double percentualRJ = (rj / total) * 100;
-    double percentualMG = (mg / total) * 100;
-    double percentualES = (es / total) * 100;
-    double percentualOutros = (outros / total) * 100;
     /**
      * Exercício 5
      * Dado o valor de faturamento mensal de uma distribuidora, detalhado por estado:
@@ -80,6 +54,20 @@ public class Main {
     * o percentual de representação que cada estado teve dentro do
     * valor total mensal da distribuidora.
      */
+    double sp = 67836.43;
+    double rj = 36678.66;
+    double mg = 29229.88;
+    double es = 27165.48;
+    double outros = 19849.53;
+
+    double total = sp + rj + mg + es + outros;
+
+    double percentualSP = (sp / total) * 100;
+    double percentualRJ = (rj / total) * 100;
+    double percentualMG = (mg / total) * 100;
+    double percentualES = (es / total) * 100;
+    double percentualOutros = (outros / total) * 100;
+ 
         System.out.println("Percentual de representação por estado:");
         System.out.printf("SP: %.2f%%\n", percentualSP);
         System.out.printf("RJ: %.2f%%\n", percentualRJ);
@@ -88,7 +76,7 @@ public class Main {
         System.out.printf("Outros: %.2f%%\n", percentualOutros);
         System.out.println("==========================================");
 
-        /**
+        /** Exercicio 4 
          *  Escreva um programa que inverta os caracteres de um string
          * IMPORTANTE:
          * a) Essa string pode ser informada através de qualquer entrada de sua preferência
